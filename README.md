@@ -1,5 +1,9 @@
 # 💫 About Me:
-👋 Hi, I’m Saranraj  <br><br>🎓 Undergraduate engineering student focused on **Machine Learning and Artificial Intelligence**.  <br>🧠 I’m deeply interested in understanding how models work internally — beyond treating them as black boxes.<br><br>🔬 I work on **research-grade projects** that explore data behavior, model assumptions, evaluation metrics, and limitations. My focus is on experimentation, analysis, and learning how model decisions are formed.<br><br>🚀 Currently strengthening my foundations in **ML, applied AI, and data analysis**, with an emphasis on explainability, model behavior, and continuous improvement.<br>
+👋 Hey, I'm Saranraj — an AI & Data Science undergrad from Chennai (B.Tech, 2027).<br><br>
+🤖 I spend most of my time building **multi-agent LLM systems** — like [DARA](https://github.com/saranraj1/DARA-v2), an autonomous bug-resolution pipeline that goes from root-cause analysis to a verified GitHub PR, and **Thenali AI**, a RAG-based platform that helps devs learn unfamiliar codebases faster.<br><br>
+🔍 I don't like treating models as black boxes. I care about *why* a model made a decision, where it fails, and how to verify its output before trusting it — so observability, evaluation, and safety gates show up in everything I build.<br><br>
+🛠️ Currently benchmarking my agents against SWE-bench-style tasks, studying failure modes, and sharpening my ML/NLP fundamentals along the way.<br><br>
+📫 Reach me at **saran17102005@gmail.com**
 
 
 ## 🌐 Socials:
