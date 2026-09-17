@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-label="The Epistemic Intelligence Stack: Four core research specimens — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR">
-<title>The Epistemic Intelligence Stack</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-label="Systems: Four core research projects — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR">
+<title>Systems</title>
 
 <!-- Outer Container -->
 <rect width="960" height="280" rx="12" fill="#080b12"/>
 <rect x="1" y="1" width="958" height="278" rx="12" fill="none" stroke="#1e293b" stroke-width="1.2"/>
 
 <!-- Top Ledger Header -->
-<text x="32" y="32" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="#94a3b8">03 // THE EPISTEMIC INTELLIGENCE STACK</text>
-<text x="480" y="32" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="#475569">QUADRANT CLASSIFICATION</text>
-<text x="928" y="32" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#22d3ee">4 CORE SPECIMENS</text>
+<text x="32" y="32" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="#94a3b8">03 // SYSTEMS</text>
+<text x="480" y="32" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="#475569">CORE RESEARCH SPECIMENS</text>
+<text x="928" y="32" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#22d3ee">4 FLAGSHIP SYSTEMS</text>
 
 <line x1="24" y1="46" x2="936" y2="46" stroke="#1e293b" stroke-width="1"/>
 

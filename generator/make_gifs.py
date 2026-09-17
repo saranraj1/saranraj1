@@ -102,7 +102,7 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
     beacon_r = int(3 * SCALE)
     draw.ellipse([int(22 * SCALE) - beacon_r, dot_y - beacon_r, int(22 * SCALE) + beacon_r, dot_y + beacon_r], fill=accent)
     draw.text((int(32 * SCALE), dot_y - int(6 * SCALE)), "[SYS-01]", fill=accent, font=font_tag_bold)
-    draw.text((int(78 * SCALE), dot_y - int(6 * SCALE)), "SARAN RESEARCH OS // EPISTEMIC TELEMETRY", fill=text_muted, font=font_tag_bold)
+    draw.text((int(78 * SCALE), dot_y - int(6 * SCALE)), "SARAN RESEARCH OS // EXPERIMENTAL LAB", fill=text_muted, font=font_tag_bold)
     draw.text((HERO_WIDTH - int(24 * SCALE), dot_y - int(6 * SCALE)), "MODE: EVIDENCE-FIRST", fill=accent, font=font_tag_bold, anchor="ra")
 
     # ---------------------------------------------------------
@@ -111,8 +111,8 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
     left_x = int(26 * SCALE)
     start_y = title_h + int(16 * SCALE)
 
-    # Small coordinate tag
-    draw.text((left_x, start_y), "SPECIMEN // 0xSR1", fill=accent, font=font_tag_bold)
+    # Small identity tag
+    draw.text((left_x, start_y), "SPECIMEN // SR-01", fill=accent, font=font_tag_bold)
 
     # Name
     draw.text((left_x, start_y + int(14 * SCALE)), "U SARAN RAJ", fill=text_main, font=font_name)
@@ -142,8 +142,8 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
     draw.text((left_x, quote_y + int(16 * SCALE)), "EXPOSE ITS REASONING.", fill=text_main, font=font_quote)
     draw.text((left_x, quote_y + int(32 * SCALE)), "OWN ITS CONSEQUENCES.", fill=accent, font=font_quote_cyan)
 
-    # Coordinate watermark
-    draw.text((left_x, HERO_HEIGHT - int(16 * SCALE)), "LOC: 13.0827°N 80.2707°E · EPISTEMIC KERNEL", fill=text_dim, font=font_mono_small)
+    # Clean identity watermark (No fake lat/long coordinates)
+    draw.text((left_x, HERO_HEIGHT - int(16 * SCALE)), "LAB // INDEPENDENT RESEARCH · SPECIMEN // SR-01", fill=text_dim, font=font_mono_small)
 
     # ---------------------------------------------------------
     # RIGHT COLUMN: Interrogation Console
@@ -174,7 +174,7 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
         "PROBE // REASONING PROOFS",
         "STATUS // EVIDENCE RECORDED"
     ]
-    draw.text((con_x0 + int(12 * SCALE), con_y0 + int(6 * SCALE)), "EPISTEMIC PROBE MONITOR", fill=text_muted, font=font_tag_bold)
+    draw.text((con_x0 + int(12 * SCALE), con_y0 + int(6 * SCALE)), "RESEARCH PROBES", fill=text_muted, font=font_tag_bold)
     draw.text((con_x1 - int(12 * SCALE), con_y0 + int(6 * SCALE)), state_titles[state_idx], fill=accent, font=font_tag_bold, anchor="ra")
 
     # Subtle scanline effect

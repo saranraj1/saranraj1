@@ -10,46 +10,24 @@ Copy the contents of this package into that repository and push `main`.
 
 Open `https://github.com/saranraj1`. GitHub should render `README.md` as the profile page.
 
-## 3. Enable the activity updater
+## 3. Regenerate assets locally
 
-The included GitHub Action runs daily and can also be started manually from **Actions → Update GitHub Activity → Run workflow**.
-
-The workflow first tries `PROFILE_TOKEN` and falls back to the repository-provided `GITHUB_TOKEN`.
-
-### Recommended token setup
-
-If the Action's GraphQL request is rejected with an authentication/permission error, create a GitHub token that can read your user contribution data and save it as a repository secret named:
-
-`PROFILE_TOKEN`
-
-Do **not** hard-code the token in `generator/generate.mjs` or the workflow.
-
-## 4. Change the account name
-
-If you reuse this template for another account, update `GITHUB_LOGIN` in `.github/workflows/update-activity.yml`.
-
-## 5. Local preview
-
-The SVGs can be opened directly in a browser.
-
-To regenerate activity locally:
+To regenerate the profile animations and SVGs:
 
 ```bash
-npm install
-GITHUB_TOKEN=YOUR_TOKEN GITHUB_LOGIN=saranraj1 npm run generate
+python generator/make_gifs.py
+python generator/make_map.py
+python generator/make_systems.py
 ```
 
-On Windows PowerShell:
+Or via npm:
 
-```powershell
-$env:GITHUB_TOKEN="YOUR_TOKEN"
-$env:GITHUB_LOGIN="saranraj1"
+```bash
 npm run generate
 ```
 
 ## Notes
 
-- The hero graphics are intentionally static so the profile identity does not depend on an external service.
-- The activity graphics are generated locally by the Action and committed back into the profile repository.
-- The activity SVG includes a subtle recent-activity pulse; there is no JavaScript in the SVG.
-- The README uses direct repository links for the flagship projects so visitors can inspect the actual implementations.
+- The hero and failure lab animations are pre-rendered lightweight GIFs (<180 KB) for 100% reliable rendering on GitHub.
+- The research map and systems plates are static SVGs for crisp vector rendering across all displays.
+- The README uses direct repository links for the flagship projects and failure lab experiments so visitors can inspect actual implementations.

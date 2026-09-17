@@ -17,17 +17,17 @@ def generate_systems_svg(dark=True):
     w = 960
     h = 280
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="The Epistemic Intelligence Stack: Four core research specimens — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR">
-<title>The Epistemic Intelligence Stack</title>
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Systems: Four core research projects — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR">
+<title>Systems</title>
 
 <!-- Outer Container -->
 <rect width="{w}" height="{h}" rx="12" fill="{bg}"/>
 <rect x="1" y="1" width="{w-2}" height="{h-2}" rx="12" fill="none" stroke="{border}" stroke-width="1.2"/>
 
 <!-- Top Ledger Header -->
-<text x="32" y="32" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="{text_muted}">03 // THE EPISTEMIC INTELLIGENCE STACK</text>
-<text x="480" y="32" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="{text_dim}">QUADRANT CLASSIFICATION</text>
-<text x="{w-32}" y="32" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="{accent}">4 CORE SPECIMENS</text>
+<text x="32" y="32" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="{text_muted}">03 // SYSTEMS</text>
+<text x="480" y="32" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="{text_dim}">CORE RESEARCH SPECIMENS</text>
+<text x="{w-32}" y="32" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="{accent}">4 FLAGSHIP SYSTEMS</text>
 
 <line x1="24" y1="46" x2="{w-24}" y2="46" stroke="{border}" stroke-width="1"/>
 

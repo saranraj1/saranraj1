@@ -18,8 +18,8 @@ def generate_map_svg(dark=True):
     w = 960
     h = 430
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Asymmetric Editorial Research Map: Epistemic Topology across Code Intelligence, Responsible AI, AI Reliability, Agent Systems, and Verification">
-<title>Asymmetric Research Map</title>
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Research Map: Spatial relationships across Code Intelligence, Responsible AI, AI Reliability, Agent Systems, and Verification">
+<title>Research Map</title>
 <defs>
   <marker id="arrow-cyan-{ 'dark' if dark else 'light' }" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
     <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="{accent}"/>
@@ -48,7 +48,7 @@ def generate_map_svg(dark=True):
 </g>
 
 <!-- Top Ledger Header -->
-<text x="32" y="34" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="{text_muted}">FIG 01 // EPISTEMIC RESEARCH TOPOLOGY</text>
+<text x="32" y="34" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="{text_muted}">FIG 01 // RESEARCH TOPOLOGY</text>
 <text x="440" y="34" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="{text_dim}">AXIS-X: PROVABILITY · AXIS-Y: AUTONOMY DYNAMICS</text>
 <text x="{w-32}" y="34" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="{accent}">REF: COORD-2026.04</text>
 

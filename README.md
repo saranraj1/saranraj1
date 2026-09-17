@@ -7,6 +7,10 @@
 </picture>
 
 <p align="center">
+  <i>"I investigate where intelligent systems fail — and build tools to expose why."</i>
+</p>
+
+<p align="center">
   <a href="https://saranraj-portfolio-two.vercel.app/">Portfolio</a> ·
   <a href="https://github.com/saranraj1?tab=repositories">GitHub Repositories</a> ·
   <a href="https://www.linkedin.com/in/saranraj-u-663615352/">LinkedIn</a> ·
@@ -20,7 +24,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/map-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/map-light.svg">
-  <img alt="Asymmetric Editorial Research Map: Epistemic topology across Code Intelligence, Responsible AI, AI Reliability, Agent Systems, and Verification" src="./assets/map-light.svg" width="100%">
+  <img alt="Research Map: Spatial topology across Code Intelligence, Responsible AI, AI Reliability, Agent Systems, and Verification" src="./assets/map-light.svg" width="100%">
 </picture>
 
 ---
@@ -30,7 +34,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/systems-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/systems-light.svg">
-  <img alt="The Epistemic Intelligence Stack: Four core research specimens — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR" src="./assets/systems-light.svg" width="100%">
+  <img alt="Systems: Four core research projects — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR" src="./assets/systems-light.svg" width="100%">
 </picture>
 
 <p align="center">
