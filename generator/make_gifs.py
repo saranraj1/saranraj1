@@ -17,7 +17,9 @@ try:
     font_detail = ImageFont.truetype("C:/Windows/Fonts/consola.ttf", 9.5 * SCALE)
     font_mono = ImageFont.truetype("C:/Windows/Fonts/consola.ttf", 13 * SCALE)
     font_mono_bold = ImageFont.truetype("C:/Windows/Fonts/consolab.ttf", 13 * SCALE)
-    font_mono_small = ImageFont.truetype("C:/Windows/Fonts/consola.ttf", 11 * SCALE)
+    font_mono_small = ImageFont.truetype("C:/Windows/Fonts/consola.ttf", 10 * SCALE)
+    font_mono_small_bold = ImageFont.truetype("C:/Windows/Fonts/consolab.ttf", 10 * SCALE)
+    font_node = ImageFont.truetype("C:/Windows/Fonts/consolab.ttf", 11 * SCALE)
 except Exception:
     font_name = ImageFont.load_default()
     font_sub = font_name
@@ -30,6 +32,8 @@ except Exception:
     font_mono = font_name
     font_mono_bold = font_name
     font_mono_small = font_name
+    font_mono_small_bold = font_name
+    font_node = font_name
 
 # -------------------------------------------------------------
 # 1. COMPACT RESEARCH-TERMINAL HERO GIF
@@ -67,7 +71,6 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
         scanline_color = (8, 145, 178, 10)
         pass_color = (16, 185, 129, 255) # #10b981 green
 
-    # Outer container
     draw.rounded_rectangle(
         [(1, 1), (HERO_WIDTH - 2, HERO_HEIGHT - 2)],
         radius=HERO_RADIUS,
@@ -76,7 +79,6 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
         width=int(1.2 * SCALE)
     )
 
-    # Top title bar
     title_h = int(32 * SCALE)
     draw.rounded_rectangle(
         [(int(2 * SCALE), int(2 * SCALE)), (HERO_WIDTH - int(3 * SCALE), title_h)],
@@ -89,7 +91,6 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
         width=int(1 * SCALE)
     )
 
-    # Window dots
     dot_y = title_h // 2 + int(1 * SCALE)
     dot_r = int(3.5 * SCALE)
     dots = [
@@ -103,7 +104,6 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
     draw.text((int(58 * SCALE), dot_y - int(6 * SCALE)), "saran@ai-lab: ~/research-terminal", fill=text_muted, font=font_tag_bold)
     draw.text((HERO_WIDTH - int(24 * SCALE), dot_y - int(6 * SCALE)), "AI RESEARCH LAB // VERIFIABLE", fill=accent, font=font_tag_bold, anchor="ra")
 
-    # Left Panel: Identity & Philosophy
     left_x = int(26 * SCALE)
     start_y = title_h + int(18 * SCALE)
 
@@ -122,7 +122,6 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
     draw.text((left_x, quote_y + int(19 * SCALE)), "EXPOSE ITS REASONING.", fill=text_main, font=font_quote)
     draw.text((left_x, quote_y + int(38 * SCALE)), "OWN ITS CONSEQUENCES.", fill=accent, font=font_quote)
 
-    # Right Panel: Living Terminal Console
     con_x0 = int(430 * SCALE)
     con_y0 = title_h + int(12 * SCALE)
     con_x1 = HERO_WIDTH - int(20 * SCALE)
@@ -226,136 +225,178 @@ def generate_hero_gif(dark=True, output_path="assets/hero-dark.gif"):
     print(f"Generated {output_path} ({os.path.getsize(output_path) // 1024} KB)")
 
 # -----------------------------------------------------------------------------------
-# 2. RESEARCH FAILURE PIPELINE GIF (DATA -> SHIFT -> FAIL -> AUDIT -> EXPLAIN -> VERIFY)
+# 2. COMPACT RESEARCH FAILURE PIPELINE GIF (DATA -> SHIFT -> FAIL -> AUDIT -> EXPLAIN -> VERIFY)
 # -----------------------------------------------------------------------------------
-PIPE_WIDTH = 860 * SCALE
-PIPE_HEIGHT = 56 * SCALE
+PIPE_WIDTH = 880 * SCALE
+PIPE_HEIGHT = 48 * SCALE
 PIPE_RADIUS = 10 * SCALE
 
-def generate_pipeline_gif(dark=True, output_path="assets/pipeline-dark.gif"):
-    nodes = ["DATA", "SHIFT", "FAIL", "AUDIT", "EXPLAIN", "VERIFY"]
-    frames = []
-    durations = []
+def render_pipeline_frame(dark=True, active_idx=0, pulse_sub=0):
+    img = Image.new("RGBA", (PIPE_WIDTH, PIPE_HEIGHT), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
 
     if dark:
-        bg_color = (8, 11, 18, 255)
-        border_color = (38, 50, 68, 255)
-        text_muted = (100, 116, 139)
-        text_active = (34, 211, 238)
-        chip_active = (14, 58, 80)
-        border_active = (34, 211, 238)
-        arrow_color = (60, 75, 96)
-        arrow_active = (34, 211, 238)
-        warning_color = (251, 146, 60)
-        warning_chip = (67, 36, 18)
+        bg = (8, 11, 18, 255)
+        border = (38, 50, 68, 255)
+        text_muted = (100, 116, 139, 255)
+        arrow_color = (47, 60, 78, 255)
+        arrow_lit = (34, 211, 238, 255)
+        # Cyan node colors
+        cyan_text = (34, 211, 238, 255)
+        cyan_chip = (14, 58, 80, 255)
+        cyan_border = (34, 211, 238, 255)
+        # Warning node colors for FAIL
+        warn_text = (251, 146, 60, 255)
+        warn_chip = (67, 36, 18, 255)
+        warn_border = (251, 146, 60, 255)
+        # Pass node colors for VERIFY
+        pass_text = (52, 211, 153, 255)
+        pass_chip = (6, 78, 59, 255)
+        pass_border = (52, 211, 153, 255)
     else:
-        bg_color = (247, 248, 251, 255)
-        border_color = (217, 222, 232, 255)
-        text_muted = (148, 163, 184)
-        text_active = (8, 145, 178)
-        chip_active = (224, 242, 254)
-        border_active = (8, 145, 178)
-        arrow_color = (203, 213, 225)
-        arrow_active = (8, 145, 178)
-        warning_color = (217, 119, 6)
-        warning_chip = (254, 243, 199)
+        bg = (247, 248, 251, 255)
+        border = (217, 222, 232, 255)
+        text_muted = (148, 163, 184, 255)
+        arrow_color = (203, 213, 225, 255)
+        arrow_lit = (8, 145, 178, 255)
+        # Cyan node colors
+        cyan_text = (8, 145, 178, 255)
+        cyan_chip = (224, 242, 254, 255)
+        cyan_border = (8, 145, 178, 255)
+        # Warning node colors for FAIL
+        warn_text = (217, 119, 6, 255)
+        warn_chip = (254, 243, 199, 255)
+        warn_border = (217, 119, 6, 255)
+        # Pass node colors for VERIFY
+        pass_text = (16, 185, 129, 255)
+        pass_chip = (209, 250, 229, 255)
+        pass_border = (16, 185, 129, 255)
 
-    start_x = int(220 * SCALE)
-    available_width = PIPE_WIDTH - start_x - int(25 * SCALE)
-    node_width = available_width // len(nodes)
+    # Outer container
+    draw.rounded_rectangle(
+        [(1, 1), (PIPE_WIDTH - 2, PIPE_HEIGHT - 2)],
+        radius=PIPE_RADIUS,
+        fill=bg,
+        outline=border,
+        width=int(1.2 * SCALE)
+    )
 
-    def base_pipe_frame(title):
-        img = Image.new("RGBA", (PIPE_WIDTH, PIPE_HEIGHT), (0, 0, 0, 0))
-        draw = ImageDraw.Draw(img)
-        draw.rounded_rectangle(
-            [(1, 1), (PIPE_WIDTH - 2, PIPE_HEIGHT - 2)],
-            radius=PIPE_RADIUS,
-            fill=bg_color,
-            outline=border_color,
-            width=int(1.2 * SCALE)
-        )
-        dot_y = PIPE_HEIGHT // 2
-        dot_r = int(3.5 * SCALE)
-        dots = [
-            (int(24 * SCALE), (255, 95, 87)),
-            (int(36 * SCALE), (254, 188, 46)),
-            (int(48 * SCALE), (40, 200, 64))
-        ]
-        for dx, color in dots:
-            draw.ellipse([dx - dot_r, dot_y - dot_r, dx + dot_r, dot_y + dot_r], fill=color)
-        title_color = (142, 154, 170) if dark else (100, 116, 139)
-        draw.text((int(62 * SCALE), dot_y - int(7 * SCALE)), title, fill=title_color, font=font_mono_small)
-        return img, draw
+    # Left prefix: dots + label
+    dot_y = PIPE_HEIGHT // 2
+    dot_r = int(3 * SCALE)
+    dots = [
+        (int(20 * SCALE), (255, 95, 87)),
+        (int(30 * SCALE), (254, 188, 46)),
+        (int(40 * SCALE), (40, 200, 64))
+    ]
+    for dx, color in dots:
+        draw.ellipse([dx - dot_r, dot_y - dot_r, dx + dot_r, dot_y + dot_r], fill=color)
 
-    for active_idx in range(len(nodes)):
-        curr_node = nodes[active_idx]
-        title = f"research.pipeline: [{curr_node}]"
-        img, draw = base_pipe_frame(title)
+    title_color = (142, 154, 170) if dark else (100, 116, 139)
+    draw.text((int(52 * SCALE), dot_y - int(6 * SCALE)), "FAILURE LAB", fill=title_color, font=font_mono_small_bold)
 
-        for i, node_name in enumerate(nodes):
-            cx = start_x + i * node_width + node_width // 2
-            cy = PIPE_HEIGHT // 2
-            is_active = (i == active_idx)
-            is_fail = (node_name == "FAIL")
+    # Dividing separator
+    sep_x = int(145 * SCALE)
+    draw.line([(sep_x, int(10 * SCALE)), (sep_x, PIPE_HEIGHT - int(10 * SCALE))], fill=border, width=int(1 * SCALE))
 
-            bbox = font_mono_bold.getbbox(node_name)
-            tw = bbox[2] - bbox[0]
-            th = bbox[3] - bbox[1]
-            chip_w = tw + int(14 * SCALE)
-            chip_h = th + int(10 * SCALE)
-            x0 = cx - chip_w // 2
-            y0 = cy - chip_h // 2
-            x1 = cx + chip_w // 2
-            y1 = cy + chip_h // 2
+    # 6 pipeline nodes
+    nodes = ["DATA", "SHIFT", "FAIL", "AUDIT", "EXPLAIN", "VERIFY"]
+    start_x = int(160 * SCALE)
+    available_width = PIPE_WIDTH - start_x - int(20 * SCALE)
+    slot_width = available_width // len(nodes)
 
-            if is_active:
-                fill_c = warning_chip if is_fail else chip_active
-                border_c = warning_color if is_fail else border_active
-                text_c = warning_color if is_fail else text_active
-                draw.rounded_rectangle([(x0, y0), (x1, y1)], radius=int(5 * SCALE), fill=fill_c, outline=border_c, width=int(1.2 * SCALE))
-                draw.text((x0 + int(7 * SCALE), y0 + int(3 * SCALE)), node_name, fill=text_c, font=font_mono_bold)
-            else:
-                draw.text((x0 + int(7 * SCALE), y0 + int(3 * SCALE)), node_name, fill=text_muted, font=font_mono)
+    is_hold = (active_idx == len(nodes))
 
-            if i < len(nodes) - 1:
-                arr_x = start_x + (i + 1) * node_width - int(8 * SCALE)
-                arr_col = arrow_active if i < active_idx else arrow_color
-                draw.text((arr_x, cy - int(8 * SCALE)), "→", fill=arr_col, font=font_mono_bold)
-
-        img_res = img.resize((PIPE_WIDTH // SCALE, PIPE_HEIGHT // SCALE), Image.Resampling.LANCZOS)
-        frames.append(img_res.convert("P", palette=Image.Palette.ADAPTIVE, colors=64))
-        durations.append(850)
-
-    # Final hold phase
-    img, draw = base_pipe_frame("research.pipeline: [PROOF ESTABLISHED ✓]")
     for i, node_name in enumerate(nodes):
-        cx = start_x + i * node_width + node_width // 2
-        cy = PIPE_HEIGHT // 2
-        is_fail = (node_name == "FAIL")
+        cx = start_x + i * slot_width + slot_width // 2
+        cy = dot_y
 
-        bbox = font_mono_bold.getbbox(node_name)
+        is_active = (i == active_idx)
+        is_past = (i < active_idx)
+        is_fail = (node_name == "FAIL")
+        is_verify = (node_name == "VERIFY")
+
+        # Measure text
+        bbox = font_node.getbbox(node_name)
         tw = bbox[2] - bbox[0]
         th = bbox[3] - bbox[1]
-        chip_w = tw + int(14 * SCALE)
-        chip_h = th + int(10 * SCALE)
+
+        # Extra padding when active for pulse feel
+        extra_p = int(2 * SCALE) if (is_active and pulse_sub == 1) else 0
+        chip_w = tw + int(16 * SCALE) + extra_p * 2
+        chip_h = th + int(10 * SCALE) + extra_p * 2
         x0 = cx - chip_w // 2
         y0 = cy - chip_h // 2
         x1 = cx + chip_w // 2
         y1 = cy + chip_h // 2
 
-        fill_c = warning_chip if is_fail else chip_active
-        border_c = warning_color if is_fail else border_active
-        text_c = warning_color if is_fail else text_active
+        if is_active:
+            # Active node colors
+            if is_fail:
+                fc, bc, tc = warn_chip, warn_border, warn_text
+            elif is_verify:
+                fc, bc, tc = pass_chip, pass_border, pass_text
+            else:
+                fc, bc, tc = cyan_chip, cyan_border, cyan_text
 
-        draw.rounded_rectangle([(x0, y0), (x1, y1)], radius=int(5 * SCALE), fill=fill_c, outline=border_c, width=int(1 * SCALE))
-        draw.text((x0 + int(7 * SCALE), y0 + int(3 * SCALE)), node_name, fill=text_c, font=font_mono_bold)
+            draw.rounded_rectangle(
+                [(x0, y0), (x1, y1)],
+                radius=int(5 * SCALE),
+                fill=fc,
+                outline=bc,
+                width=int(1.2 * SCALE)
+            )
+            draw.text((cx - tw // 2, cy - th // 2 - int(1 * SCALE)), node_name, fill=tc, font=font_node)
+        elif is_hold:
+            # Hold summary state: subtle illuminated chain
+            if is_fail:
+                fc, bc, tc = warn_chip, warn_border, warn_text
+            elif is_verify:
+                fc, bc, tc = pass_chip, pass_border, pass_text
+            else:
+                fc, bc, tc = cyan_chip, cyan_border, cyan_text
 
+            draw.rounded_rectangle(
+                [(x0, y0), (x1, y1)],
+                radius=int(5 * SCALE),
+                fill=fc,
+                outline=bc,
+                width=int(1 * SCALE)
+            )
+            draw.text((cx - tw // 2, cy - th // 2 - int(1 * SCALE)), node_name, fill=tc, font=font_node)
+        else:
+            # Idle / past node
+            tc = text_muted
+            draw.text((cx - tw // 2, cy - th // 2 - int(1 * SCALE)), node_name, fill=tc, font=font_node)
+
+        # Arrow to next node
         if i < len(nodes) - 1:
-            arr_x = start_x + (i + 1) * node_width - int(8 * SCALE)
-            draw.text((arr_x, cy - int(8 * SCALE)), "→", fill=arrow_active, font=font_mono_bold)
+            arr_x = start_x + (i + 1) * slot_width - int(8 * SCALE)
+            arr_c = arrow_lit if (is_past or is_hold) else arrow_color
+            draw.text((arr_x, cy - int(8 * SCALE)), "→", fill=arr_c, font=font_mono_bold)
 
     img_res = img.resize((PIPE_WIDTH // SCALE, PIPE_HEIGHT // SCALE), Image.Resampling.LANCZOS)
-    frames.append(img_res.convert("P", palette=Image.Palette.ADAPTIVE, colors=64))
+    return img_res.convert("P", palette=Image.Palette.ADAPTIVE, colors=64)
+
+def generate_pipeline_gif(dark=True, output_path="assets/pipeline-dark.gif"):
+    frames = []
+    durations = []
+
+    # 6 stages, each stage has 2 subtle pulse subframes (400ms + 350ms = 750ms per stage)
+    for stage in range(6):
+        # Pulse frame 1
+        f1 = render_pipeline_frame(dark=dark, active_idx=stage, pulse_sub=0)
+        frames.append(f1)
+        durations.append(420)
+
+        # Pulse frame 2 (subtle expand)
+        f2 = render_pipeline_frame(dark=dark, active_idx=stage, pulse_sub=1)
+        frames.append(f2)
+        durations.append(380)
+
+    # Stage 6: Hold state where the full verified path is illuminated
+    f_hold = render_pipeline_frame(dark=dark, active_idx=6, pulse_sub=0)
+    frames.append(f_hold)
     durations.append(1300)
 
     frames[0].save(

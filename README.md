@@ -38,15 +38,19 @@
 
 ### 🧪 Failure Lab
 
-> *Where does an AI system stop being trustworthy — and can we prove where it happened?*
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/pipeline-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./assets/pipeline-light.gif">
-  <img alt="Research failure analysis pipeline: DATA → SHIFT → FAIL → AUDIT → EXPLAIN → VERIFY" src="./assets/pipeline-light.gif" width="100%">
+  <img alt="Failure Lab Research Pipeline: DATA → SHIFT → FAIL → AUDIT → EXPLAIN → VERIFY" src="./assets/pipeline-light.gif" width="100%">
 </picture>
 
-Selected experiments: **[XAI Lab](https://github.com/saranraj1/XAI-Lab)** · [Data Decay](https://github.com/saranraj1/data_decay) · [OOD Explorer](https://github.com/saranraj1/OOD-explorer) · [MissingnessMatter](https://github.com/saranraj1/MissingnessMatter) · [Fragility Index](https://github.com/saranraj1/Fragility_index)
+<p align="center">
+  <a href="https://github.com/saranraj1/data_decay">Data Decay</a> ·
+  <a href="https://github.com/saranraj1/OOD-explorer">OOD Explorer</a> ·
+  <a href="https://github.com/saranraj1/MissingnessMatter">MissingnessMatter</a> ·
+  <a href="https://github.com/saranraj1/Fragility_index">Fragility Index</a> ·
+  <a href="https://github.com/saranraj1/XAI-Lab">XAI Lab</a>
+</p>
 
 ---
 
