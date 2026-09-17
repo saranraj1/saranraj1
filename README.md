@@ -1,29 +1,14 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img alt="Saran Raj U — AI/ML Researcher & Developer" src="./assets/hero-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.gif">
+  <img alt="U Saran Raj — AI/ML Researcher · Responsible AI · Agent Systems" src="./assets/hero-light.gif" width="100%">
 </picture>
 
 <br>
 
-### BUILD INTELLIGENCE. EXPOSE ITS REASONING. OWN ITS CONSEQUENCES.
-
-AI/ML researcher & developer focused on building systems that can be interrogated, verified, and held accountable.
-
-<p>
-  <a href="https://saranraj-portfolio-two.vercel.app/">Portfolio</a> ·
-  <a href="https://github.com/saranraj1?tab=repositories">GitHub Repositories</a> ·
-  <a href="https://www.linkedin.com/in/saranraj-u-663615352/">LinkedIn</a> ·
-  <a href="mailto:saran17102005@gmail.com">Email</a>
-</p>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/loop-dark.gif">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/loop-light.gif">
-  <img alt="Research loop: BUILD → TEST → AUDIT → VERIFY" src="./assets/loop-light.gif" width="100%">
-</picture>
+[Portfolio](https://saranraj-portfolio-two.vercel.app/) · [GitHub Repositories](https://github.com/saranraj1?tab=repositories) · [LinkedIn](https://www.linkedin.com/in/saranraj-u-663615352/) · [Email](mailto:saran17102005@gmail.com)
 
 </div>
 
