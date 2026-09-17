@@ -79,6 +79,13 @@ An empirical loop testing model breakdown boundaries under distribution shift:
 
 ---
 
+### Inquiries & Collaboration
+
+* **Currently Investigating**: Formal verification of multi-step agent reasoning chains & latent shortcut mitigation.
+* **Open to**: Research residencies, lab collaborations, and pre-print co-authorship. Contact: [saran17102005@gmail.com](mailto:saran17102005@gmail.com).
+
+---
+
 ```
 SARAN@RESEARCH-LAB
 ────────────────────────────────────────────────────────────
