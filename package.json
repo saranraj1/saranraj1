@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "node generator/generate.mjs"
+    "generate": "node generator/generate.mjs",
+    "generate:gifs": "python generator/make_gifs.py"
   }
 }

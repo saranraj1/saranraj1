@@ -12,7 +12,18 @@
 
 AI/ML researcher & developer focused on building systems that can be interrogated, verified, and held accountable.
 
-[Portfolio](https://saranraj-portfolio-two.vercel.app/) · [GitHub Repositories](https://github.com/saranraj1?tab=repositories) · [LinkedIn](https://www.linkedin.com/in/saranraj-u-663615352/) · [Email](mailto:saran17102005@gmail.com)
+<p>
+  <a href="https://saranraj-portfolio-two.vercel.app/">Portfolio</a> ·
+  <a href="https://github.com/saranraj1?tab=repositories">GitHub Repositories</a> ·
+  <a href="https://www.linkedin.com/in/saranraj-u-663615352/">LinkedIn</a> ·
+  <a href="mailto:saran17102005@gmail.com">Email</a>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/loop-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/loop-light.gif">
+  <img alt="Research loop: BUILD → TEST → AUDIT → VERIFY" src="./assets/loop-light.gif" width="100%">
+</picture>
 
 </div>
 
@@ -44,7 +55,11 @@ AI/ML researcher & developer focused on building systems that can be interrogate
 
 > *Where does an AI system stop being trustworthy — and can we prove where it happened?*
 
-`Distribution Shift` → `Proxy Leakage` → `Model Fragility` → `Audit & Verification`
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pipeline-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pipeline-light.gif">
+  <img alt="Research failure analysis pipeline: DATA → SHIFT → FAIL → AUDIT → EXPLAIN → VERIFY" src="./assets/pipeline-light.gif" width="100%">
+</picture>
 
 Selected experiments: **[XAI Lab](https://github.com/saranraj1/XAI-Lab)** · [Data Decay](https://github.com/saranraj1/data_decay) · [OOD Explorer](https://github.com/saranraj1/OOD-explorer) · [MissingnessMatter](https://github.com/saranraj1/MissingnessMatter) · [Fragility Index](https://github.com/saranraj1/Fragility_index)
 
