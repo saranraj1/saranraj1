@@ -27,21 +27,18 @@
 
 ### 03 / SYSTEMS
 
-#### `[01]` [TITAN](https://github.com/saranraj1/Titan) `// CHANGE-AWARE CODE INTELLIGENCE`
-`SPECIMEN_01` · *Impact radius & semantic change reasoning*  
-`MECHANISM` AST · Git co-change history · Datalog · proof trees
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/systems-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/systems-light.svg">
+  <img alt="The Epistemic Intelligence Stack: Four core research specimens — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR" src="./assets/systems-light.svg" width="100%">
+</picture>
 
-#### `[02]` [DARA v2](https://github.com/saranraj1/DARA-v2) `// AUTONOMOUS SOFTWARE REPAIR`
-`SPECIMEN_02` · *Root-cause localization & sandbox-verified repair*  
-`MECHANISM` Multi-agent workflows · vector retrieval · Docker sandbox · Neo4j
-
-#### `[03]` [SILENTBIAS](https://github.com/saranraj1/SilentBias) `// PROXY LEAKAGE & FAIRNESS`
-`SPECIMEN_03` · *Latent proxy leakage & algorithmic fairness auditing*  
-`MECHANISM` Shadow models · fairness metrics · representation probing
-
-#### `[04]` [AGENT-NOIR](https://github.com/saranraj1/AGENT-NOIR) `// DECEPTION & AGENT RELIABILITY`
-`SPECIMEN_04` · *Game-theoretic multi-agent consensus & deception resistance*  
-`MECHANISM` Deterministic simulation · audit provenance · independent verifier
+<p align="center">
+  <a href="https://github.com/saranraj1/Titan"><b>[01] TITAN</b></a> ·
+  <a href="https://github.com/saranraj1/DARA-v2"><b>[02] DARA v2</b></a> ·
+  <a href="https://github.com/saranraj1/SilentBias"><b>[03] SILENTBIAS</b></a> ·
+  <a href="https://github.com/saranraj1/AGENT-NOIR"><b>[04] AGENT-NOIR</b></a>
+</p>
 
 ---
 
@@ -75,16 +72,6 @@
 
 `RUNTIME` Python · TypeScript · FastAPI · PyTorch/TensorFlow · RAG · FAISS  
 `INFRA` PostgreSQL · Redis · Neo4j · Docker · GitHub Actions
-
----
-
-### 07 / ACTIVITY / SIGNAL
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img alt="Public Activity Signal for Saran Raj U" src="./assets/activity-light.svg" width="100%">
-</picture>
 
 ---
 

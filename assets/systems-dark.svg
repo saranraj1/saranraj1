@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-label="The Epistemic Intelligence Stack: Four core research specimens — TITAN, DARA v2, SILENTBIAS, and AGENT-NOIR">
+<title>The Epistemic Intelligence Stack</title>
+
+<!-- Outer Container -->
+<rect width="960" height="280" rx="12" fill="#080b12"/>
+<rect x="1" y="1" width="958" height="278" rx="12" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+
+<!-- Top Ledger Header -->
+<text x="32" y="32" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="#94a3b8">03 // THE EPISTEMIC INTELLIGENCE STACK</text>
+<text x="480" y="32" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="#475569">QUADRANT CLASSIFICATION</text>
+<text x="928" y="32" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#22d3ee">4 CORE SPECIMENS</text>
+
+<line x1="24" y1="46" x2="936" y2="46" stroke="#1e293b" stroke-width="1"/>
+
+<!-- Center Dividing Hairline -->
+<line x1="480" y1="56" x2="480" y2="244" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4"/>
+
+<!-- ───────────────────────────────────────────────────────────── -->
+<!-- QUADRANT 1: TITAN (North-West)                                -->
+<!-- ───────────────────────────────────────────────────────────── -->
+<g transform="translate(32, 60)">
+  <rect width="424" height="92" rx="6" fill="#0d131f" stroke="#1e293b" stroke-width="1"/>
+  <rect x="0" y="0" width="3.5" height="92" rx="2" fill="#22d3ee"/>
+  
+  <text x="16" y="22" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="700" letter-spacing="1" fill="#22d3ee">[01] SPECIMEN // SYNTAX &amp; PROOFS</text>
+  <text x="16" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" font-weight="700" letter-spacing="0.5" fill="#f1f5f9">TITAN</text>
+  <text x="80" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="500" fill="#94a3b8">CHANGE-AWARE CODE INTELLIGENCE</text>
+  
+  <text x="16" y="62" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" fill="#475569">OBJECTIVE: Impact radius &amp; semantic change reasoning</text>
+  <text x="16" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9.5" fill="#22d3ee">AST · Git co-change history · Datalog · proof trees</text>
+</g>
+
+<!-- ───────────────────────────────────────────────────────────── -->
+<!-- QUADRANT 2: DARA v2 (South-West)                             -->
+<!-- ───────────────────────────────────────────────────────────── -->
+<g transform="translate(32, 164)">
+  <rect width="424" height="92" rx="6" fill="#0d131f" stroke="#1e293b" stroke-width="1"/>
+  <rect x="0" y="0" width="3.5" height="92" rx="2" fill="#22d3ee"/>
+  
+  <text x="16" y="22" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="700" letter-spacing="1" fill="#22d3ee">[02] SPECIMEN // CAUSAL REPAIR</text>
+  <text x="16" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" font-weight="700" letter-spacing="0.5" fill="#f1f5f9">DARA v2</text>
+  <text x="96" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="500" fill="#94a3b8">AUTONOMOUS SOFTWARE REPAIR</text>
+  
+  <text x="16" y="62" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" fill="#475569">OBJECTIVE: Root-cause localization &amp; sandbox-verified repair</text>
+  <text x="16" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9.5" fill="#22d3ee">Multi-agent workflows · vector retrieval · Docker · Neo4j</text>
+</g>
+
+<!-- ───────────────────────────────────────────────────────────── -->
+<!-- QUADRANT 3: SILENTBIAS (North-East)                          -->
+<!-- ───────────────────────────────────────────────────────────── -->
+<g transform="translate(504, 60)">
+  <rect width="424" height="92" rx="6" fill="#0d131f" stroke="#f59e0b" stroke-width="1"/>
+  <rect x="0" y="0" width="3.5" height="92" rx="2" fill="#f59e0b"/>
+  
+  <text x="16" y="22" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="700" letter-spacing="1" fill="#f59e0b">[03] SPECIMEN // LATENT AUDIT</text>
+  <text x="16" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" font-weight="700" letter-spacing="0.5" fill="#f1f5f9">SILENTBIAS</text>
+  <text x="126" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="500" fill="#94a3b8">PROXY LEAKAGE &amp; FAIRNESS</text>
+  
+  <text x="16" y="62" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" fill="#475569">OBJECTIVE: Uncovering latent bias &amp; proxy attribute leakage</text>
+  <text x="16" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9.5" fill="#f59e0b">Shadow models · fairness metrics · representation probing</text>
+</g>
+
+<!-- ───────────────────────────────────────────────────────────── -->
+<!-- QUADRANT 4: AGENT-NOIR (South-East)                          -->
+<!-- ───────────────────────────────────────────────────────────── -->
+<g transform="translate(504, 164)">
+  <rect width="424" height="92" rx="6" fill="#0d131f" stroke="#34d399" stroke-width="1"/>
+  <rect x="0" y="0" width="3.5" height="92" rx="2" fill="#34d399"/>
+  
+  <text x="16" y="22" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="700" letter-spacing="1" fill="#34d399">[04] SPECIMEN // GAME CONSENSUS</text>
+  <text x="16" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14" font-weight="700" letter-spacing="0.5" fill="#f1f5f9">AGENT-NOIR</text>
+  <text x="136" y="42" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="500" fill="#94a3b8">DECEPTION &amp; AGENT RELIABILITY</text>
+  
+  <text x="16" y="62" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" fill="#475569">OBJECTIVE: Multi-agent interrogation &amp; deception resistance</text>
+  <text x="16" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9.5" fill="#34d399">Deterministic simulation · audit provenance · verifier</text>
+</g>
+
+<!-- Footer Coordinates -->
+<text x="32" y="268" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#475569">TAXONOMY: CODE INTELLIGENCE · FAIRNESS · CAUSAL LOCALIZATION · CONSENSUS</text>
+<text x="928" y="268" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" letter-spacing="1" fill="#22d3ee">ALL SPECIMENS ACTIVE</text>
+
+</svg>

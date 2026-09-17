@@ -97,19 +97,12 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
         width=int(1 * SCALE)
     )
 
-    # 3 laboratory control markers
+    # Laboratory telemetry markers (Replacing generic macOS dots)
     dot_y = title_h // 2 + int(1 * SCALE)
-    dot_r = int(3.5 * SCALE)
-    dots = [
-        (int(22 * SCALE), (255, 95, 87)),
-        (int(34 * SCALE), (254, 188, 46)),
-        (int(46 * SCALE), (40, 200, 64))
-    ]
-    for dx, color in dots:
-        draw.ellipse([dx - dot_r, dot_y - dot_r, dx + dot_r, dot_y + dot_r], fill=color)
-
-    # Titlebar text: Replace "STATUS: VERIFIED" with "MODE: EVIDENCE-FIRST"
-    draw.text((int(58 * SCALE), dot_y - int(6 * SCALE)), "SARAN RESEARCH OS // SYS-LOG v2.4", fill=text_muted, font=font_tag_bold)
+    beacon_r = int(3 * SCALE)
+    draw.ellipse([int(22 * SCALE) - beacon_r, dot_y - beacon_r, int(22 * SCALE) + beacon_r, dot_y + beacon_r], fill=accent)
+    draw.text((int(32 * SCALE), dot_y - int(6 * SCALE)), "[SYS-01]", fill=accent, font=font_tag_bold)
+    draw.text((int(78 * SCALE), dot_y - int(6 * SCALE)), "SARAN RESEARCH OS // EPISTEMIC TELEMETRY", fill=text_muted, font=font_tag_bold)
     draw.text((HERO_WIDTH - int(24 * SCALE), dot_y - int(6 * SCALE)), "MODE: EVIDENCE-FIRST", fill=accent, font=font_tag_bold, anchor="ra")
 
     # ---------------------------------------------------------
@@ -175,13 +168,13 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
         width=int(1 * SCALE)
     )
     state_titles = [
-        "EXEC // CODE INTELLIGENCE",
-        "EXEC // ROBUSTNESS & OOD",
-        "EXEC // PROXY AUDITING",
-        "EXEC // REASONING PROOFS",
+        "PROBE // CODE INTELLIGENCE",
+        "PROBE // ROBUSTNESS & OOD",
+        "PROBE // PROXY AUDITING",
+        "PROBE // REASONING PROOFS",
         "STATUS // EVIDENCE RECORDED"
     ]
-    draw.text((con_x0 + int(12 * SCALE), con_y0 + int(6 * SCALE)), "INTERROGATION CONSOLE", fill=text_muted, font=font_tag_bold)
+    draw.text((con_x0 + int(12 * SCALE), con_y0 + int(6 * SCALE)), "EPISTEMIC PROBE MONITOR", fill=text_muted, font=font_tag_bold)
     draw.text((con_x1 - int(12 * SCALE), con_y0 + int(6 * SCALE)), state_titles[state_idx], fill=accent, font=font_tag_bold, anchor="ra")
 
     # Subtle scanline effect
@@ -193,29 +186,29 @@ def render_hero_frame(dark=True, state_idx=0, cursor_on=True, scanline_offset=0)
         )
 
     commands = [
-        ("./build", "synthesizing AST proof trees & impact radius", "[EVIDENCE]"),
-        ("./test", "reproducing distribution shifts & boundary decay", "[EVIDENCE]"),
-        ("./audit", "auditing hidden proxies & algorithmic bias", "[EVIDENCE]"),
-        ("./verify", "formal reasoning checked · zero hallucination", "[PROVENANCE ✓]")
+        ("PROBE 01 // CODE INTEL", "AST proof trees & impact radius", "[AUDITED]"),
+        ("PROBE 02 // ROBUSTNESS", "perturbation stress & boundary decay", "[AUDITED]"),
+        ("PROBE 03 // PROXY BIAS", "auditing latent demographic leakage", "[AUDITED]"),
+        ("PROBE 04 // CONSENSUS", "game-theoretic proof · zero deceit", "[VERIFIED ✓]")
     ]
 
     base_cmd_y = con_y0 + con_head_h + int(10 * SCALE)
     line_step = int(37 * SCALE)
-    cur = "_" if cursor_on else " "
+    cur = "◈" if cursor_on else " "
 
     for idx, (cmd_name, detail, tag) in enumerate(commands):
         cy = base_cmd_y + idx * line_step
         if idx < state_idx or state_idx == 4:
-            draw.text((con_x0 + int(12 * SCALE), cy), f"$ {cmd_name}", fill=text_main, font=font_cmd)
+            draw.text((con_x0 + int(12 * SCALE), cy), f"{cmd_name}", fill=text_main, font=font_cmd)
             tag_col = pass_color if idx == 3 else text_muted
             draw.text((con_x1 - int(12 * SCALE), cy), tag, fill=tag_col, font=font_tag_bold, anchor="ra")
             draw.text((con_x0 + int(16 * SCALE), cy + int(16 * SCALE)), f"› {detail}", fill=text_muted, font=font_detail)
         elif idx == state_idx:
-            draw.text((con_x0 + int(12 * SCALE), cy), f"$ {cmd_name}{cur}", fill=accent, font=font_cmd)
+            draw.text((con_x0 + int(12 * SCALE), cy), f"{cmd_name} {cur}", fill=accent, font=font_cmd)
             draw.text((con_x1 - int(12 * SCALE), cy), "INTERROGATING...", fill=amber_color, font=font_tag_bold, anchor="ra")
             draw.text((con_x0 + int(16 * SCALE), cy + int(16 * SCALE)), f"› {detail}", fill=text_dim, font=font_detail)
         else:
-            draw.text((con_x0 + int(12 * SCALE), cy), f"$ {cmd_name}", fill=text_dim, font=font_cmd)
+            draw.text((con_x0 + int(12 * SCALE), cy), f"{cmd_name}", fill=text_dim, font=font_cmd)
             draw.text((con_x1 - int(12 * SCALE), cy), "[PENDING]", fill=text_dim, font=font_tag, anchor="ra")
 
     img_res = img.resize((HERO_WIDTH // SCALE, HERO_HEIGHT // SCALE), Image.Resampling.LANCZOS)
