@@ -1,25 +1,219 @@
-# 💫 About Me:
-👋 Hey, I'm Saranraj — an AI & Data Science undergrad from Chennai (B.Tech, 2027).<br><br>
-🤖 I spend most of my time building **multi-agent LLM systems** — like [DARA](https://github.com/saranraj1/DARA-v2), an autonomous bug-resolution pipeline that goes from root-cause analysis to a verified GitHub PR, and **Thenali AI**, a RAG-based platform that helps devs learn unfamiliar codebases faster.<br><br>
-🔍 I don't like treating models as black boxes. I care about *why* a model made a decision, where it fails, and how to verify its output before trusting it — so observability, evaluation, and safety gates show up in everything I build.<br><br>
-🛠️ Currently benchmarking my agents against SWE-bench-style tasks, studying failure modes, and sharpening my ML/NLP fundamentals along the way.<br><br>
-📫 Reach me at **saran17102005@gmail.com**
+<div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+  <img alt="Saran Raj U — AI/ML Researcher & Developer" src="./assets/hero-light.svg" width="100%">
+</picture>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saranraj-u-663615352/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:saran17102005@gmail.com) 
+<br>
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101) ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![ApacheCassandra](https://img.shields.io/badge/cassandra-%231287B1.svg?style=for-the-badge&logo=apache-cassandra&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=saranraj1&theme=dark&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=saranraj1&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=saranraj1&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
+### BUILD INTELLIGENCE. EXPOSE ITS REASONING. OWN ITS CONSEQUENCES.
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+AI/ML researcher and developer working across **code intelligence, responsible AI, agent systems, explainability, reliability, and retrieval**.
+
+<p>
+  <a href="https://saranraj-portfolio-two.vercel.app/">Portfolio</a> ·
+  <a href="https://github.com/saranraj1?tab=repositories">Repositories</a> ·
+  <a href="https://github.com/saranraj1/Titan">TITAN</a> ·
+  <a href="https://github.com/saranraj1/AGENT-NOIR">Agent-Noir</a>
+</p>
+
+</div>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=saranraj1&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🔬 Research Identity
+
+<table>
+<tr>
+<td width="33%" align="center"><b>CODE INTELLIGENCE</b><br>AST analysis · impact analysis · program repair · provenance</td>
+<td width="33%" align="center"><b>RESPONSIBLE AI</b><br>fairness · proxy leakage · bias auditing · transparency</td>
+<td width="33%" align="center"><b>AGENT SYSTEMS</b><br>multi-agent reasoning · autonomous workflows · verification</td>
+</tr>
+<tr>
+<td align="center"><b>AI RELIABILITY</b><br>robustness · failure analysis · evaluation · safety</td>
+<td align="center"><b>EXPLAINABLE AI</b><br>SHAP · LIME · counterfactuals · interpretable evidence</td>
+<td align="center"><b>RAG / RETRIEVAL</b><br>grounding · vector search · retrieval failure modes</td>
+</tr>
+</table>
+
+---
+
+# 🛰️ Flagship Systems
+
+| System | What it investigates | Stack / mechanism |
+|---|---|---|
+| **[TITAN](https://github.com/saranraj1/Titan)** | Change-aware code intelligence and impact reasoning | AST · Git co-change history · Datalog · proof trees |
+| **[DARA v2](https://github.com/saranraj1/DARA-v2)** | Autonomous root-cause analysis and software repair | LLM agents · vector search · Docker · Neo4j |
+| **[SilentBias](https://github.com/saranraj1/SilentBias)** | Hidden proxy leakage and fairness failures | Shadow model · proxy analysis · fairness metrics |
+| **[Agent-Noir](https://github.com/saranraj1/AGENT-NOIR)** | Deception, consensus and multi-agent reliability | Deterministic simulation · provenance · independent audit |
+
+### TITAN — the verification-first one
+
+`AST` → `Git co-change history` → `Datalog reasoning` → `Impact / Risk / Validation` → `Proof`
+
+- Offline-first and designed for deterministic reasoning.
+- Supports Python, JavaScript, TypeScript and TSX analysis.
+- Produces proof trees and change-impact evidence rather than only a recommendation.
+- Integrates with VS Code, GitHub Actions, CI runners and agent workflows.
+- The repository currently reports **291 passing tests** in its 1.0.0 README.
+
+### DARA v2 — the autonomous repair pipeline
+
+`Ingest` → `Diagnose` → `Patch` → `Sandbox` → `Security Review` → `PR`
+
+- Multi-agent debugging and repair workflow.
+- Vector-search context and Neo4j-based architectural/blast-radius reasoning.
+- Docker-isolated validation with security-oriented checks.
+- Observability through Prometheus, Grafana and Jaeger.
+
+### SilentBias — the fairness audit
+
+`Protected attribute hidden` → `Shadow Model` → `Leakage Detection` → `Proxy Analysis`
+
+- Tests whether supposedly “blind” models can reconstruct protected information.
+- Includes proxy-feature discovery, Disparate Impact and Statistical Parity analysis.
+
+### Agent-Noir — the reliability experiment
+
+`Imperfect agents` + `manufactured consensus` → `belief propagation` → `verdict` → `audit`
+
+- Deterministic, offline simulation with an independent audit script.
+- Separates **agreement** from **truth** as an experimental question.
+- Runs controlled deception-on / deception-off experiments across fixed seeds.
+
+---
+
+# 🧪 The Failure Lab
+
+I build experiments around one question:
+
+> **Where does an AI system stop being trustworthy — and can we prove where it happened?**
+
+```text
+DATA DECAY
+    ↓
+DISTRIBUTION SHIFT
+    ↓
+OUT-OF-DISTRIBUTION FAILURE
+    ↓
+MISSINGNESS
+    ↓
+PROXY LEAKAGE
+    ↓
+MODEL FRAGILITY
+    ↓
+HUMAN ↔ MODEL DISAGREEMENT
+    ↓
+AUDIT → EXPLAIN → VERIFY
+```
+
+Selected research systems: **[XAI Lab](https://github.com/saranraj1/XAI-Lab)** · [Data Decay](https://github.com/saranraj1/data_decay) · [OOD Explorer](https://github.com/saranraj1/OOD-explorer) · [MissingnessMatter](https://github.com/saranraj1/MissingnessMatter) · [Fragility Index](https://github.com/saranraj1/Fragility_index) · [Cold-start Audit](https://github.com/saranraj1/Cold-start-audit) · [Human-vs-Model](https://github.com/saranraj1/human-vs-model).
+
+---
+
+# 🧠 Applied AI Systems
+
+| System | Focus |
+|---|---|
+| **[Thenali AI](https://github.com/saranraj1/Thenali-AI)** | Developer learning + repository intelligence |
+| **[Dual-LLM AI Agent](https://github.com/saranraj1/Dual-LLM-AI-Agent)** | Local-first autonomous coding assistant |
+| **[XAI Lab](https://github.com/saranraj1/XAI-Lab)** | Explainability, drift, fairness and counterfactual analysis |
+| **[Voice Guardian](https://github.com/saranraj1/voice-guardian)** | Real-time voice emotion recognition |
+| **[SignBridge](https://github.com/saranraj1/SignBridge)** | On-device gesture/sign understanding |
+| **[PocketMind AI](https://github.com/saranraj1/PocketMind-AI)** | Personal/local AI experimentation |
+
+---
+
+# 📐 Research Footprint
+
+A snapshot of the work represented on my portfolio — not live GitHub counters:
+
+`120+` AI challenge days · `10` research reports · `9` failure modes reproduced · `4` AI projects · `2` internships · `1` research initiative
+
+The common thread is not “AI that works once.” It is **AI that can be inspected when it fails**.
+
+---
+
+# ⚙️ Technology Matrix
+
+**Languages**
+
+`Python` `JavaScript` `TypeScript` `SQL`
+
+**AI / ML**
+
+`TensorFlow` `Keras` `scikit-learn` `XGBoost` `librosa` `Transformers`
+
+**LLM / Agents**
+
+`LLaMA` `Qwen` `AWS Bedrock` `Whisper` `RAG` `Multi-Agent Systems`
+
+**Data / Retrieval**
+
+`FAISS` `DynamoDB` `S3` `PostgreSQL` `Redis` `Neo4j`
+
+**Engineering**
+
+`FastAPI` `Docker` `GitHub Actions` `REST APIs` `VS Code Extensions`
+
+**Research**
+
+`XAI` `Fairness` `Robustness` `Evaluation` `Verification` `Failure Analysis`
+
+---
+
+# 📊 GitHub Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
+  <img alt="GitHub contribution activity for Saran Raj U" src="./assets/activity-light.svg" width="100%">
+</picture>
+
+> Updated automatically by GitHub Actions. The graphic is generated from GitHub's contribution calendar; it does not require a third-party stats service.
+
+---
+
+# 🧭 Research Principles
+
+```text
+01  BUILD
+    Create systems that solve meaningful problems.
+
+02  INTERROGATE
+    Question their assumptions and behavior.
+
+03  VERIFY
+    Test claims against evidence.
+
+04  EXPLAIN
+    Make decisions understandable.
+
+05  ACCOUNT
+    Treat consequences as part of the system.
+```
+
+### My principle
+
+> **Build intelligence. Expose its reasoning. Own its consequences.**
+
+---
+
+<div align="center">
+
+**[GitHub](https://github.com/saranraj1) · [Portfolio](https://saranraj-portfolio-two.vercel.app/)**
+
+```text
+SARAN@AI-LAB:~$ ./next_experiment
+
+Initializing hypothesis...
+Loading baseline...
+Stress-testing assumptions...
+Auditing evidence...
+
+> experiment continues_
+```
+
+</div>
