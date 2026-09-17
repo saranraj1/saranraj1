@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-label="Asymmetric Editorial Research Map: Epistemic Topology across Code Intelligence, Responsible AI, AI Reliability, Agent Systems, and Verification">
+<title>Asymmetric Research Map</title>
+<defs>
+  <marker id="arrow-cyan-light" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0891b2"/>
+  </marker>
+  <marker id="arrow-subtle-light" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#cbd5e1"/>
+  </marker>
+  <marker id="arrow-verify-light" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#059669"/>
+  </marker>
+</defs>
+
+<!-- Outer Container -->
+<rect width="960" height="430" rx="12" fill="#f7f8fb"/>
+<rect x="1" y="1" width="958" height="428" rx="12" fill="none" stroke="#d9dee8" stroke-width="1.2"/>
+
+<!-- Editorial Measurement Grid & Calipers -->
+<g stroke="#edf2f7" stroke-width="1">
+  <line x1="40" y1="56" x2="920" y2="56"/>
+  <line x1="40" y1="190" x2="920" y2="190" stroke-dasharray="3 6"/>
+  <line x1="40" y1="320" x2="920" y2="320" stroke-dasharray="3 6"/>
+  <line x1="40" y1="390" x2="920" y2="390"/>
+  
+  <line x1="330" y1="56" x2="330" y2="390" stroke-dasharray="3 6"/>
+  <line x1="640" y1="56" x2="640" y2="390" stroke-dasharray="3 6"/>
+</g>
+
+<!-- Top Ledger Header -->
+<text x="32" y="34" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="1.5" fill="#64748b">FIG 01 // EPISTEMIC RESEARCH TOPOLOGY</text>
+<text x="440" y="34" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="#94a3b8">AXIS-X: PROVABILITY · AXIS-Y: AUTONOMY DYNAMICS</text>
+<text x="928" y="34" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#0891b2">REF: COORD-2026.04</text>
+
+<!-- Subtle Corner Marks -->
+<path d="M 18 26 L 18 18 L 26 18" fill="none" stroke="#0891b2" stroke-width="1.2"/>
+<path d="M 942 26 L 942 18 L 934 18" fill="none" stroke="#0891b2" stroke-width="1.2"/>
+<path d="M 18 404 L 18 412 L 26 412" fill="none" stroke="#0891b2" stroke-width="1.2"/>
+<path d="M 942 404 L 942 412 L 934 412" fill="none" stroke="#0891b2" stroke-width="1.2"/>
+
+<!-- Coordinate Measurement Notes -->
+<text x="48" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">COORD: 0x01 [STATIC AST]</text>
+<text x="340" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">TRANSITION: Δ_representation</text>
+<text x="650" y="78" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">COORD: 0x03 [EMPIRICAL OOD]</text>
+
+<!-- ───────────────────────────────────────────────────────────── -->
+<!-- CONNECTING RESEARCH TENSION VECTORS (Thin hairlines)         -->
+<!-- ───────────────────────────────────────────────────────────── -->
+
+<!-- Vector 1: Code Intelligence -> Responsible AI (Downward) -->
+<path d="M 180 148 L 180 230" fill="none" stroke="#0891b2" stroke-width="1.2" marker-end="url(#arrow-cyan-light)"/>
+<text x="190" y="195" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#0891b2">syntax → semantics</text>
+
+<!-- Vector 2: Responsible AI -> AI Reliability (Horizontal / Transversal) -->
+<path d="M 320 270 L 630 145" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow-subtle-light)"/>
+<text x="440" y="190" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">probe: distribution shift</text>
+
+<!-- Vector 3: Responsible AI -> Agent Systems (South-East) -->
+<path d="M 280 297 L 430 286" fill="none" stroke="#0891b2" stroke-width="1.2" marker-end="url(#arrow-cyan-light)"/>
+<text x="290" y="322" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#64748b">constraint propagation</text>
+
+<!-- Vector 4: AI Reliability -> Verification (South-East Anchor) -->
+<path d="M 755 160 L 755 315" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow-subtle-light)"/>
+<text x="765" y="240" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">formal bounds</text>
+
+<!-- Vector 5: Agent Systems -> Verification (Horizontal to Anchor) -->
+<path d="M 660 286 L 700 320" fill="none" stroke="#059669" stroke-width="1.5" marker-end="url(#arrow-verify-light)"/>
+<text x="630" y="335" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" fill="#059669">provenance audit</text>
+
+
+<!-- ───────────────────────────────────────────────────────────── -->
+<!-- ASYMMETRIC RESEARCH NODES                                    -->
+<!-- ───────────────────────────────────────────────────────────── -->
+
+<!-- NODE 01: CODE INTELLIGENCE (North-West) -->
+<g transform="translate(60, 95)">
+  <rect width="240" height="52" rx="6" fill="#ffffff" stroke="#d9dee8" stroke-width="1"/>
+  <rect x="0" y="0" width="4" height="52" rx="2" fill="#0891b2"/>
+  <text x="16" y="20" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1" fill="#0891b2">[01] FOUNDATION</text>
+  <text x="16" y="38" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="0.5" fill="#0f172a">CODE INTELLIGENCE</text>
+  <text x="228" y="20" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">cov(AST, Impact)</text>
+</g>
+
+<!-- NODE 02: RESPONSIBLE AI (Mid-West) -->
+<g transform="translate(60, 245)">
+  <rect width="240" height="52" rx="6" fill="#ffffff" stroke="#d9dee8" stroke-width="1"/>
+  <rect x="0" y="0" width="4" height="52" rx="2" fill="#0891b2"/>
+  <text x="16" y="20" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1" fill="#0891b2">[02] GOVERNANCE</text>
+  <text x="16" y="38" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="0.5" fill="#0f172a">RESPONSIBLE AI</text>
+  <text x="228" y="20" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">Δ_proxy leakage</text>
+</g>
+
+<!-- NODE 03: AI RELIABILITY (North-East / Mid-East) -->
+<g transform="translate(630, 105)">
+  <rect width="250" height="54" rx="6" fill="#ffffff" stroke="#d97706" stroke-width="1"/>
+  <rect x="0" y="0" width="4" height="54" rx="2" fill="#d97706"/>
+  <text x="16" y="20" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1" fill="#d97706">[03] ROBUSTNESS &amp; OOD</text>
+  <text x="16" y="39" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="0.5" fill="#0f172a">AI RELIABILITY</text>
+  <text x="238" y="20" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">τ_boundary</text>
+</g>
+
+<!-- NODE 04: AGENT SYSTEMS (Center-South) -->
+<g transform="translate(430, 260)">
+  <rect width="230" height="52" rx="6" fill="#ffffff" stroke="#d9dee8" stroke-width="1"/>
+  <rect x="0" y="0" width="4" height="52" rx="2" fill="#0891b2"/>
+  <text x="16" y="20" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="600" letter-spacing="1" fill="#0891b2">[04] DYNAMICS</text>
+  <text x="16" y="38" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="0.5" fill="#0f172a">AGENT SYSTEMS</text>
+  <text x="218" y="20" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">game_consensus</text>
+</g>
+
+<!-- NODE 05: VERIFICATION (South-East Anchor) -->
+<g transform="translate(700, 320)">
+  <rect width="220" height="52" rx="6" fill="#ffffff" stroke="#059669" stroke-width="1.2"/>
+  <rect x="0" y="0" width="4" height="52" rx="2" fill="#059669"/>
+  <text x="16" y="20" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" font-weight="700" letter-spacing="1" fill="#059669">[05] FORMAL PROOFS</text>
+  <text x="16" y="38" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="0.5" fill="#0f172a">VERIFICATION</text>
+  <text x="208" y="20" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#059669">P(H | E) = 1.0</text>
+</g>
+
+<!-- Bottom Metadata Strip -->
+<text x="40" y="412" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" fill="#94a3b8">TOPOLOGY METRIC: LATENT COUPLING · INDEPENDENT VERIFIER ARCHITECTURE</text>
+<text x="920" y="412" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" letter-spacing="1" fill="#0891b2">STATUS // OPEN RESEARCH</text>
+
+</svg>

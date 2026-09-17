@@ -218,23 +218,18 @@ function makeSvg(data, dark = true) {
 
   const generatedDate = new Date().toISOString().slice(0, 10);
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="GitHub contribution activity for ${esc(login)}">
-<title>GitHub contribution activity for ${esc(login)}</title>
-<style>
-  .cell { transform-box: fill-box; transform-origin: center; }
-  .pulse { animation: pulse 2.5s ease-in-out var(--d) infinite alternate; }
-  @keyframes pulse { from { opacity: 0.75; } to { opacity: 1; } }
-</style>
-<rect width="1000" height="260" rx="18" fill="${bg}"/>
-<rect x="1" y="1" width="998" height="258" rx="18" fill="none" stroke="${line}"/>
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Activity Signal trace for ${esc(login)}">
+<title>Activity Signal trace for ${esc(login)}</title>
+<rect width="1000" height="260" rx="14" fill="${bg}"/>
+<rect x="1" y="1" width="998" height="258" rx="14" fill="none" stroke="${line}"/>
 
-<!-- Top Terminal Header -->
-<rect x="22" y="16" width="956" height="38" rx="10" fill="${panel}" stroke="${line}"/>
-<circle cx="44" cy="35" r="5" fill="#ff5f57"/>
-<circle cx="60" cy="35" r="5" fill="#febc2e"/>
-<circle cx="76" cy="35" r="5" fill="#28c840"/>
-<text x="96" y="40" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="${muted}">GITHUB ACTIVITY // <tspan fill="${textMain}" font-weight="600">${esc(login.toUpperCase())}</tspan></text>
-<text x="962" y="40" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" font-weight="600" fill="${accent}">${totalContributions.toLocaleString()} contributions in the last year</text>
+<!-- Top Research OS Header -->
+<rect x="22" y="16" width="956" height="38" rx="8" fill="${panel}" stroke="${line}"/>
+<circle cx="44" cy="35" r="4.5" fill="#ff5f57"/>
+<circle cx="60" cy="35" r="4.5" fill="#febc2e"/>
+<circle cx="76" cy="35" r="4.5" fill="#28c840"/>
+<text x="96" y="40" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="1" fill="${muted}">ACTIVITY / SIGNAL // <tspan fill="${textMain}" font-weight="600">PUBLIC EVIDENCE TRACE</tspan></text>
+<text x="962" y="40" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="600" letter-spacing="0.5" fill="${accent}">MODE: CONTINUOUS</text>
 
 <!-- Grid & Labels -->
 ${monthSvg}
@@ -242,12 +237,12 @@ ${weekdaySvg}
 ${rects}
 
 <!-- Legend & Footer -->
-<text x="${startX}" y="${legendY}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" fill="${muted}">BUILD → EXPERIMENT → VERIFY → SHIP</text>
-<text x="${legendStartX}" y="${legendY}" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" fill="${muted}">Less</text>
+<text x="${startX}" y="${legendY}" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="${muted}">SIGNAL INTENSITY</text>
+<text x="${legendStartX}" y="${legendY}" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" fill="${muted}">Low</text>
 ${legendSquares}
-<text x="${legendStartX + 109}" y="${legendY}" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" fill="${muted}">More</text>
+<text x="${legendStartX + 109}" y="${legendY}" font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10" fill="${muted}">High</text>
 
-<text x="962" y="244" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" fill="${muted}">UPDATED ${esc(generatedDate)}</text>
+<text x="962" y="244" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" letter-spacing="1" fill="${muted}">LOG: ${esc(generatedDate)}</text>
 </svg>`;
 }
 

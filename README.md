@@ -1,47 +1,56 @@
-<div align="center">
+### 01 / IDENTITY
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.gif">
-  <img alt="U Saran Raj — AI/ML Researcher · Responsible AI · Agent Systems" src="./assets/hero-light.gif" width="100%">
+  <img alt="The Saran Research OS — U Saran Raj" src="./assets/hero-light.gif" width="100%">
 </picture>
 
-<br>
-
-[Portfolio](https://saranraj-portfolio-two.vercel.app/) · [GitHub Repositories](https://github.com/saranraj1?tab=repositories) · [LinkedIn](https://www.linkedin.com/in/saranraj-u-663615352/) · [Email](mailto:saran17102005@gmail.com)
-
-</div>
-
----
-
-### 🔬 Research Domains
-
-| Domain | Focus |
-|---|---|
-| **Code Intelligence** | AST analysis · impact analysis · program repair · provenance |
-| **Responsible AI** | Fairness auditing · proxy leakage · bias detection · transparency |
-| **Agent Systems** | Multi-agent reasoning · autonomous workflows · verification gates |
-| **AI Reliability & XAI** | Failure analysis · robustness · SHAP / counterfactuals · interpretable evidence |
+<p align="center">
+  <a href="https://saranraj-portfolio-two.vercel.app/">Portfolio</a> ·
+  <a href="https://github.com/saranraj1?tab=repositories">GitHub Repositories</a> ·
+  <a href="https://www.linkedin.com/in/saranraj-u-663615352/">LinkedIn</a> ·
+  <a href="mailto:saran17102005@gmail.com">Email</a>
+</p>
 
 ---
 
-### 🛰️ Flagship Systems
+### 02 / RESEARCH MAP
 
-| System | What It Investigates | Stack / Mechanism |
-|---|---|---|
-| **[TITAN](https://github.com/saranraj1/Titan)** | Change-aware code intelligence & impact reasoning | AST · Git co-change history · Datalog · proof trees |
-| **[DARA v2](https://github.com/saranraj1/DARA-v2)** | Autonomous root-cause analysis & software repair | Multi-agent workflows · vector search · Docker · Neo4j |
-| **[SilentBias](https://github.com/saranraj1/SilentBias)** | Hidden proxy leakage & algorithmic fairness auditing | Shadow models · proxy analysis · fairness metrics |
-| **[Agent-Noir](https://github.com/saranraj1/AGENT-NOIR)** | Deception, consensus & multi-agent reliability | Deterministic simulation · provenance · independent audit |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/map-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/map-light.svg">
+  <img alt="Asymmetric Editorial Research Map: Epistemic topology across Code Intelligence, Responsible AI, AI Reliability, Agent Systems, and Verification" src="./assets/map-light.svg" width="100%">
+</picture>
 
 ---
 
-### 🧪 Failure Lab
+### 03 / SYSTEMS
+
+#### `[01]` [TITAN](https://github.com/saranraj1/Titan) `// CHANGE-AWARE CODE INTELLIGENCE`
+`SPECIMEN_01` · *Impact radius & semantic change reasoning*  
+`MECHANISM` AST · Git co-change history · Datalog · proof trees
+
+#### `[02]` [DARA v2](https://github.com/saranraj1/DARA-v2) `// AUTONOMOUS SOFTWARE REPAIR`
+`SPECIMEN_02` · *Root-cause localization & sandbox-verified repair*  
+`MECHANISM` Multi-agent workflows · vector retrieval · Docker sandbox · Neo4j
+
+#### `[03]` [SILENTBIAS](https://github.com/saranraj1/SilentBias) `// PROXY LEAKAGE & FAIRNESS`
+`SPECIMEN_03` · *Latent proxy leakage & algorithmic fairness auditing*  
+`MECHANISM` Shadow models · fairness metrics · representation probing
+
+#### `[04]` [AGENT-NOIR](https://github.com/saranraj1/AGENT-NOIR) `// DECEPTION & AGENT RELIABILITY`
+`SPECIMEN_04` · *Game-theoretic multi-agent consensus & deception resistance*  
+`MECHANISM` Deterministic simulation · audit provenance · independent verifier
+
+---
+
+### 04 / FAILURE LAB
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/pipeline-dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="./assets/pipeline-light.gif">
-  <img alt="Failure Lab Research Pipeline: DATA → SHIFT → FAIL → AUDIT → EXPLAIN → VERIFY" src="./assets/pipeline-light.gif" width="100%">
+  <img alt="Failure Lab Research Pipeline: DATA → SHIFT → FAILURE → AUDIT → EXPLANATION → VERIFICATION" src="./assets/pipeline-light.gif" width="100%">
 </picture>
 
 <p align="center">
@@ -54,18 +63,33 @@
 
 ---
 
-### ⚙️ Tech Stack
+### 05 / RESEARCH NOTE
 
-- **Languages:** Python, TypeScript, JavaScript, SQL
-- **AI / ML & Agents:** PyTorch, TensorFlow, scikit-learn, Transformers, LLaMA, RAG, Multi-Agent Systems
-- **Data & Systems:** Neo4j, PostgreSQL, Redis, FAISS, Docker, FastAPI, GitHub Actions
+> **`RESEARCH NOTE // 001`**  
+>  
+> *"I am interested in the gap between what an AI system predicts and what we can actually prove about it."*
 
 ---
 
-### 📊 GitHub Activity
+### 06 / TOOLS
+
+`RUNTIME` Python · TypeScript · FastAPI · PyTorch/TensorFlow · RAG · FAISS  
+`INFRA` PostgreSQL · Redis · Neo4j · Docker · GitHub Actions
+
+---
+
+### 07 / ACTIVITY / SIGNAL
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img alt="GitHub contribution activity for Saran Raj U" src="./assets/activity-light.svg" width="100%">
+  <img alt="Public Activity Signal for Saran Raj U" src="./assets/activity-light.svg" width="100%">
 </picture>
+
+---
+
+```
+SARAN@RESEARCH-LAB
+────────────────────────────────────────────────────────────
+BUILD → INTERROGATE → VERIFY → REPEAT
+```
