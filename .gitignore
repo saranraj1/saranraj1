@@ -1,5 +1,8 @@
 # Local tooling & dependencies
 .reentry/
 node_modules/
+__pycache__/
+*.pyc
+scratch/
 .DS_Store
 Thumbs.db

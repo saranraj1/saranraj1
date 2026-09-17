@@ -428,8 +428,11 @@ def generate_pipeline_gif(dark=True, output_path="assets/pipeline-dark.gif"):
 
 if __name__ == "__main__":
     os.makedirs("assets", exist_ok=True)
-    generate_hero_gif(dark=True, output_path="assets/hero-dark.gif")
-    generate_hero_gif(dark=False, output_path="assets/hero-light.gif")
+    try:
+        from generator.make_3d_hero import generate_3d_hero_gifs
+    except ImportError:
+        from make_3d_hero import generate_3d_hero_gifs
+    generate_3d_hero_gifs()
     generate_pipeline_gif(dark=True, output_path="assets/pipeline-dark.gif")
     generate_pipeline_gif(dark=False, output_path="assets/pipeline-light.gif")
     print("All profile animations generated successfully!")
