@@ -269,6 +269,7 @@ def render_pipeline_frame(dark=True, active_idx=0, pulse_sub=0):
         arrow_color = (47, 60, 78, 255)
         arrow_lit = (34, 211, 238, 255)
         cyan_text = (34, 211, 238, 255)
+        accent = (34, 211, 238, 255)
         cyan_chip = (14, 58, 80, 255)
         cyan_border = (34, 211, 238, 255)
         # Warning node colors for FAILURE
@@ -286,6 +287,7 @@ def render_pipeline_frame(dark=True, active_idx=0, pulse_sub=0):
         arrow_color = (203, 213, 225, 255)
         arrow_lit = (8, 145, 178, 255)
         cyan_text = (8, 145, 178, 255)
+        accent = (8, 145, 178, 255)
         cyan_chip = (224, 242, 254, 255)
         cyan_border = (8, 145, 178, 255)
         # Warning node colors for FAILURE
@@ -306,27 +308,19 @@ def render_pipeline_frame(dark=True, active_idx=0, pulse_sub=0):
         width=int(1.2 * SCALE)
     )
 
-    # Left prefix: dots + label
+    # Left prefix: editorial telemetry indicator
     dot_y = PIPE_HEIGHT // 2
-    dot_r = int(3 * SCALE)
-    dots = [
-        (int(18 * SCALE), (255, 95, 87)),
-        (int(28 * SCALE), (254, 188, 46)),
-        (int(38 * SCALE), (40, 200, 64))
-    ]
-    for dx, color in dots:
-        draw.ellipse([dx - dot_r, dot_y - dot_r, dx + dot_r, dot_y + dot_r], fill=color)
-
-    title_color = (142, 154, 170) if dark else (100, 116, 139)
-    draw.text((int(50 * SCALE), dot_y - int(6 * SCALE)), "FAILURE LAB", fill=title_color, font=font_mono_small_bold)
+    beacon_r = int(3 * SCALE)
+    draw.ellipse([int(20 * SCALE) - beacon_r, dot_y - beacon_r, int(20 * SCALE) + beacon_r, dot_y + beacon_r], fill=accent)
+    draw.text((int(30 * SCALE), dot_y - int(6 * SCALE)), "FLOW // FAILURE LAB", fill=text_muted, font=font_mono_small_bold)
 
     # Dividing separator
-    sep_x = int(140 * SCALE)
-    draw.line([(sep_x, int(10 * SCALE)), (sep_x, PIPE_HEIGHT - int(10 * SCALE))], fill=border, width=int(1 * SCALE))
+    sep_x = int(164 * SCALE)
+    draw.line([(sep_x, int(12 * SCALE)), (sep_x, PIPE_HEIGHT - int(12 * SCALE))], fill=border, width=int(1 * SCALE))
 
     # 6 pipeline nodes: DATA -> SHIFT -> FAILURE -> AUDIT -> EXPLANATION -> VERIFICATION
     nodes = ["DATA", "SHIFT", "FAILURE", "AUDIT", "EXPLANATION", "VERIFICATION"]
-    start_x = int(152 * SCALE)
+    start_x = int(178 * SCALE)
     available_width = PIPE_WIDTH - start_x - int(16 * SCALE)
     slot_width = available_width // len(nodes)
 
